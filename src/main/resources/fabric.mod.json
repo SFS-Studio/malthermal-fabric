@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "malthermal",
+  "version": "${version}",
+  "name": "Malthermal",
+  "description": "A quasi-real thermal dynamical mod",
+  "authors": [
+    "switefaster",
+    "Yaossg",
+    "InitAuther97"
+  ],
+  "contact": {
+    "website": "sifsstudio.com/malthermal",
+    "repo": "https://github.com/SFS-Studio/malthermal-fabric"
+  },
+  "license": "MIT",
+  "icon": "assets/malthermal-fabric/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      {
+        "adapter": "kotlin",
+        "value": "com.sifsstudio.malthermal.Malthermal"
+      }
+    ],
+    "client": [
+      {
+        "adapter": "kotlin",
+        "value": "com.sifsstudio.malthermal.client.MalthermalClient"
+      }
+    ]
+  },
+  "mixins": [
+    "malthermal-fabric.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.13.2",
+    "fabric": "*",
+    "minecraft": "1.16.5",
+    "fabric-language-kotlin": ">=1.7.1+kotlin.1.6.10"
+  }
+}
